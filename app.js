@@ -101,11 +101,4 @@ app.get("/about", function(req, res){
   res.render("about");
 });
 
-let port = process.env.PORT;
-if (port == null || port == "") {
-  port = 1989;
-}
-
-app.listen(1989, function() {
-  console.log("Server started successfuly");
-});
+app.listen(process.env.PORT);
