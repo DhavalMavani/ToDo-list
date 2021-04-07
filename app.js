@@ -103,10 +103,9 @@ app.get("/about", function(req, res){
 
 let port = process.env.PORT;
 if (port == null || port == "") {
-  port = 3000;
+  port = 1989;
 }
-app.listen(port);
 
-app.listen(port, function() {
+app.listen(1989, function() {
   console.log("Server started successfuly");
 });
