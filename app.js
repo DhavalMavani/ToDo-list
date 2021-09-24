@@ -94,14 +94,17 @@ app.post("/delete", function(req, res){
 });
 
 
+//
+// app.get("/work", function(req,res){
+//   res.render("list", {listTitle: "Work List", newListItems: workItems});
+// });
+//
+//
+// app.get("/about", function(req, res){
+//   res.render("about");
+// });
+//
 
-app.get("/work", function(req,res){
-  res.render("list", {listTitle: "Work List", newListItems: workItems});
-});
-
-app.get("/about", function(req, res){
-  res.render("about");
-});
 
 let port = process.env.PORT;
 if (port == null || port == "") {
