@@ -40,14 +40,14 @@ app.set('view engine', 'ejs');
 var today=new Date();
 app.get("/", function(req, res) {
 
-  List.find({},function(err,data){
+  List.find({/* condition*/},function(err,data){
     if (err) {
       console.log(err);
     }
     else if (data.length === 0) {
-        List.insertMany(tay ,function(error){
+        List.insertMany(tay ,function(err){
           if(err){
-            console.log(error);
+            console.log(err);
           }
           else{
             console.log("Sucessfully saved all the data");
