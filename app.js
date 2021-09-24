@@ -6,7 +6,9 @@ const mongoose = require('mongoose');
 
 const app = express();
 
-mongoose.connect("mongodb+srv://taylor-swift:qwert67890@cluster0.tt9yc.mongodb.net/ToDo_list", { useUnifiedTopology: true, useNewUrlParser: true });
+"mongodb+srv://taylor-swift:qwert67890@cluster0.tt9yc.mongodb.net/ToDo_list"
+
+mongoose.connect("mongodb+srv://dhaval:qwert67890@cluster0.cbhym.mongodb.net/ToDo_list", { useUnifiedTopology: true, useNewUrlParser: true });
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
