@@ -108,6 +108,4 @@ if (port == null || port == "") {
   port = 1989;
 }
 
-app.listen(process.env.PORT || 1989, function() {
-  console.log("Server started successfuly");
-});
+app.listen(process.env.PORT || 1989);
